@@ -5,7 +5,7 @@ class Coronavirusapi:
     username = ""
     password = ""
     token = ""
-    endpoint = "https://covid19.cloudeya.org/"
+    endpoint = "https://api.covid19api.dev/"
 
     def __init__(self, username, password):
         self.username = username

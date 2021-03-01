@@ -33,4 +33,4 @@ License stuff is [here](LICENSE).
 
 ### Copyright
 
-(c) 2020 [Cloudeya Limited](https://cloudeya.org).
+(c) 2020 [Phooni Limited](https://phooni.com).
