@@ -4,8 +4,8 @@ from coronavirus.covid19api import Coronavirusapi
 covid = Coronavirusapi("testapi1", "coronavirus19")
 
 
-# Get January 2021 Data
-# response = covid.getTimeSeries("jan2021")
+# Get May 2021 Data
+# response = covid.getTimeSeries("may2021")
 # print(response)
 
 
