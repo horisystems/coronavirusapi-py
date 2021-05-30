@@ -1,7 +1,7 @@
 from coronavirus.covid19api import Coronavirusapi
 
 # Authenticate - Generate Token
-covid = Coronavirusapi("testapi1", "coronavirus19")
+covid = Coronavirusapi("public_user", "public_pass")
 
 
 # Get May 2021 Data
