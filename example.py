@@ -5,8 +5,8 @@ covid = Coronavirusapi("public_user", "public_pass")
 
 
 # Get May 2021 Data
-# response = covid.getTimeSeries("may2021")
-# print(response)
+response = covid.getTimeSeries("may2021")
+print(response)
 
 
 # Get Time Series Data

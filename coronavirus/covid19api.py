@@ -1,5 +1,8 @@
+import datetime
 import json
 import requests
+import os.path, time
+
 
 class Coronavirusapi:
     username = ""
@@ -11,6 +14,25 @@ class Coronavirusapi:
         self.username = username
         self.password = password
 
+        self.checkToken()
+
+    def checkToken(self):
+        token_file = "token.txt"
+
+        current_date_and_time = os.path.getmtime(token_file)
+
+        if (time.time() - current_date_and_time) / 3600 > 24 * 2:
+            f = open(token_file, "w")
+            self.getToken()
+            f.write(self.token)
+            f.close()
+            time.sleep(3)
+        else:
+
+            f = open(token_file, "r")
+            lines = f.readlines()
+            self.token = lines[0]
+            f.close()
 
     def getToken(self):
         response = ""
@@ -26,35 +48,23 @@ class Coronavirusapi:
         except Exception as e:
             print(response)
 
-
     def getMonth2020(self, endpoint):
-        self.getToken()
         url = self.endpoint + endpoint
-        payload = {}
         headers = {
             "Authorization": "Bearer " + self.token,
             'Content-Type': 'application/json'
         }
         try:
-            response = requests.request("GET", url, headers=headers, data=json.dumps(payload))
-
+            response = requests.request("GET", url, headers=headers)
             return json.loads(response.text)
         except Exception as e:
             print(e)
 
-
     def getTimeSeries(self, endpoint):
-        self.getToken()
         url = self.endpoint + endpoint
-        payload = {}
         headers = {
             "Authorization": "Bearer " + self.token,
-            'Content-Type': 'application/json'
+            'Content-Type': 'application/json',
         }
-        response = requests.request("GET", url, headers=headers, data=json.dumps(payload))
-
+        response = requests.request("GET", url, headers=headers)
         return json.loads(response.text)
-
-
-
-
