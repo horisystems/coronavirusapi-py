@@ -8,10 +8,20 @@ Retrieve coronavirus current and historical [data](https://www.covid19api.dev).
 Run the commands below if you want to test it in a virtual environment: 
 
 ```sh
+## Prerequisites
 pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
-pip3 install -r requirements.txt
+pip install pip-tools
+
+## Compile Requirements
+pip-compile ./requirements.in
+
+## Upgrade Package
+pip-compile --upgrade-package requests
+
+## Sync Packages
+pip-sync
 ```
 
 For instance, running this command would return coronavirus data for May 2021.
