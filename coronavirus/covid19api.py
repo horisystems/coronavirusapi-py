@@ -48,7 +48,7 @@ class Coronavirusapi:
         except Exception as e:
             print(response)
 
-    def getMonth2020(self, endpoint):
+    def getDailyReport(self, endpoint):
         url = self.endpoint + endpoint
         headers = {
             "Authorization": "Bearer " + self.token,

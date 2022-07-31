@@ -1,6 +1,6 @@
 ## coronavirusapi-py
 
-Retrieve coronavirus current and historical [data](https://www.covid19api.dev).
+Retrieve coronavirus current and historical [data](https://moatsystems.com/covid19-api/).
 
 
 ### Getting Started
@@ -12,16 +12,7 @@ Run the commands below if you want to test it in a virtual environment:
 pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
-pip install pip-tools
-
-## Compile Requirements
-pip-compile ./requirements.in
-
-## Upgrade Package
-pip-compile --upgrade-package requests
-
-## Sync Packages
-pip-sync
+pip3 install -r requirements.txt
 ```
 
 For instance, running this command would return coronavirus data for May 2021.
@@ -33,7 +24,7 @@ python3 example.py
 Leave the virtual environment:
 
 ```sh
-deactivate venv
+deactivate
 ```
 
 ## Contributing
