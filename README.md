@@ -37,7 +37,7 @@ We use [SemVer](http://semver.org/) for versioning. For the versions available, 
 
 ## License
 
-This project is licensed under the [WTFPL License](LICENSE) - see the file for details.
+This project is licensed under the [Sustainable Use License](LICENSE) - see the file for details.
 
 ## Copyright
 
