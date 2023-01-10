@@ -13,6 +13,7 @@ pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
+deactivate
 ```
 
 For instance, running this command would return coronavirus data for May 2021.
@@ -41,4 +42,4 @@ This project is licensed under the [Sustainable Use License](LICENSE) - see the 
 
 ## Copyright
 
-(c) 2020 [Moat Systems Limited](https://moatsystems.com).
+(c) 2020 - 2023 [Moat Systems Limited](https://moatsystems.com).

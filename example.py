@@ -3,10 +3,10 @@ from coronavirus.covid19api import Coronavirusapi
 # Authenticate - Generate Token
 covid = Coronavirusapi("public_user", "public_pass")
 
-# Get July 2022 Data
-response = covid.getDailyReport("/v2/jul/2022")
+# Retrieve January 2023 Data
+response = covid.getDailyReport("/v2/jan/2023")
 print(response)
 
-# Get Time Series Data
-# response = covid.getTimeSeries("/v2/time_series_recovered_global")
+# Retrieve Time Series Data
+# response = covid.getTimeSeries("/v2/time_series_recovered_global/2023")
 # print(response)
