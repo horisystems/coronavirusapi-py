@@ -13,7 +13,6 @@ pip3 install virtualenv
 virtualenv venv
 source venv/bin/activate
 pip3 install -r requirements.txt
-deactivate
 ```
 
 For instance, running this command would return coronavirus data for May 2021.
