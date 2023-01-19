@@ -15,7 +15,7 @@ source venv/bin/activate
 pip3 install -r requirements.txt
 ```
 
-For instance, running this command would return coronavirus data for May 2021.
+For instance, running this command would return coronavirus data for January 2023.
 
 ```sh
 python3 example.py
